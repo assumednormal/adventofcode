@@ -42,11 +42,20 @@ func TestDay01_Captcha_Part02(t *testing.T) {
 	}
 }
 
-func TestDay02_Checksum(t *testing.T) {
+func TestDay02_Checksum_Part01(t *testing.T) {
 	s := `5 1 9 5
 7 5 3
 2 4 6 8`
 	if v := RowMaxDiffChecksum(s); v != 18 {
+		t.Error("Input got ", v)
+	}
+}
+
+func TestDay02_Checksum_Part02(t *testing.T) {
+	s := `5 9 2 8
+9 4 7 3
+3 8 6 5`
+	if v := RowDivChecksum(s); v != 9 {
 		t.Error("Input got ", v)
 	}
 }
