@@ -59,3 +59,21 @@ func TestDay02_Checksum_Part02(t *testing.T) {
 		t.Error("Input got ", v)
 	}
 }
+
+func TestDay03_Carry(t *testing.T) {
+	if v1 := MovesToCenter(1); v1 != 0 {
+		t.Error("Input 1 got ", v1)
+	}
+
+	if v2 := MovesToCenter(12); v2 != 3 {
+		t.Error("Input 12 got ", v2)
+	}
+
+	if v3 := MovesToCenter(23); v3 != 2 {
+		t.Error("Input 23 got ", v3)
+	}
+
+	if v4 := MovesToCenter(1024); v4 != 31 {
+		t.Error("Input 1024 got ", v4)
+	}
+}

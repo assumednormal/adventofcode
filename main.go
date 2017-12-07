@@ -26,6 +26,7 @@ var (
 401	151	309	961	124	1027	1084	389	1150	166	1057	137	932	669	590	188
 784	232	363	316	336	666	711	430	192	867	628	57	222	575	622	234`
 	input04 = input03
+	input05 = 325489
 )
 
 func main() {
@@ -33,4 +34,5 @@ func main() {
 	fmt.Println(advent2017.SumSkipDigits(input02, len(input02)/2))
 	fmt.Println(advent2017.RowMaxDiffChecksum(input03))
 	fmt.Println(advent2017.RowDivChecksum(input04))
+	fmt.Println(advent2017.MovesToCenter(input05))
 }
