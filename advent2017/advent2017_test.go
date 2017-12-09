@@ -60,7 +60,7 @@ func TestDay02_Checksum_Part02(t *testing.T) {
 	}
 }
 
-func TestDay03_Carry(t *testing.T) {
+func TestDay03_Carry_Part01(t *testing.T) {
 	if v1 := MovesToCenter(1); v1 != 0 {
 		t.Error("Input 1 got ", v1)
 	}
@@ -75,5 +75,31 @@ func TestDay03_Carry(t *testing.T) {
 
 	if v4 := MovesToCenter(1024); v4 != 31 {
 		t.Error("Input 1024 got ", v4)
+	}
+}
+
+func TestDay03_Carry_Part02(t *testing.T) {
+	if v1 := LeastCumulativeSpiral(1); v1 != 2 {
+		t.Error("Input 1 got ", v1)
+	}
+
+	if v2 := LeastCumulativeSpiral(2); v2 != 4 {
+		t.Error("Input 2 got ", v2)
+	}
+
+	if v3 := LeastCumulativeSpiral(3); v3 != 4 {
+		t.Error("Input 3 got ", v3)
+	}
+
+	if v4 := LeastCumulativeSpiral(4); v4 != 5 {
+		t.Error("Input 4 got ", v4)
+	}
+
+	if v5 := LeastCumulativeSpiral(5); v5 != 10 {
+		t.Error("Input 5 got ", v5)
+	}
+
+	if v6 := LeastCumulativeSpiral(145); v6 != 147 {
+		t.Error("Input 145 got ", v6)
 	}
 }
