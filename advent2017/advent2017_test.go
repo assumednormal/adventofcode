@@ -139,3 +139,27 @@ func TestDay04_Passphrases_Part02(t *testing.T) {
 		t.Error("Input 5 got ", v5)
 	}
 }
+
+func TestDay05_Steps_Part01(t *testing.T) {
+	i := `0
+3
+0
+1
+-3`
+
+	if v1 := StepsToExit(i); v1 != 5 {
+		t.Error("Input 1 got ", v1)
+	}
+}
+
+func TestDay05_Steps_Part02(t *testing.T) {
+	i := `0
+3
+0
+1
+-3`
+
+	if v1 := StepsToExit2(i); v1 != 10 {
+		t.Error("Input 1 got ", v1)
+	}
+}
