@@ -163,3 +163,17 @@ func TestDay05_Steps_Part02(t *testing.T) {
 		t.Error("Input 1 got ", v1)
 	}
 }
+
+func TestDay06_Memory_Reallocation_Part01(t *testing.T) {
+	i := "0 2 7 0"
+	if v1 := StepsToPriorPattern(i); v1 != 5 {
+		t.Error("Input 1 got ", v1)
+	}
+}
+
+func TestDay06_Memory_Reallocation_Part02(t *testing.T) {
+	i := "0 2 7 0"
+	if v1 := StepsToPriorPattern2(i); v1 != 4 {
+		t.Error("Input 1 got ", v1)
+	}
+}

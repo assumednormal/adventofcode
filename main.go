@@ -39,4 +39,9 @@ func main() {
 	day05Input := readFile("day05_input.txt")
 	fmt.Println(advent2017.StepsToExit(day05Input))
 	fmt.Println(advent2017.StepsToExit2(day05Input))
+
+	// day 6
+	day06Input := readFile("day06_input.txt")
+	fmt.Println(advent2017.StepsToPriorPattern(day06Input))
+	fmt.Println(advent2017.StepsToPriorPattern2(day06Input))
 }
