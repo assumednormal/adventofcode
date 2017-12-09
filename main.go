@@ -540,6 +540,7 @@ zzv wik iorhat qkb kjb lykdz vrce yjsjwj
 gyw xzgbi efus uuy
 hwcy ujdun bjjuvd jbdvju onnk xeyy mmp onkn qyzl
 jwfm ptjwrbl hhuv uolz adyweh qpj wxyogp igvnojq jmfw pqs fsnirby`
+	input08 = input07
 )
 
 func main() {
@@ -550,4 +551,5 @@ func main() {
 	fmt.Println(advent2017.MovesToCenter(input05))
 	fmt.Println(advent2017.LeastCumulativeSpiral(input06))
 	fmt.Println(advent2017.ValidPassphrases(input07))
+	fmt.Println(advent2017.ValidAnagramPassphrases(input08))
 }

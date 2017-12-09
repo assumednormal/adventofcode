@@ -103,3 +103,39 @@ func TestDay03_Carry_Part02(t *testing.T) {
 		t.Error("Input 145 got ", v6)
 	}
 }
+
+func TestDay04_Passphrases_Part01(t *testing.T) {
+	if v1 := ValidPassphrases("aa bb cc dd ee"); v1 != 1 {
+		t.Error("Input 1 got ", v1)
+	}
+
+	if v2 := ValidPassphrases("aa bb cc dd aa"); v2 != 0 {
+		t.Error("Input 2 got ", v2)
+	}
+
+	if v3 := ValidPassphrases("aa bb cc dd aaa"); v3 != 1 {
+		t.Error("Input 3 got ", v3)
+	}
+}
+
+func TestDay04_Passphrases_Part02(t *testing.T) {
+	if v1 := ValidAnagramPassphrases("abcde fghij"); v1 != 1 {
+		t.Error("Input 1 got ", v1)
+	}
+
+	if v2 := ValidAnagramPassphrases("abcde xyz ecdab"); v2 != 0 {
+		t.Error("Input 2 got ", v2)
+	}
+
+	if v3 := ValidAnagramPassphrases("a ab abc abd abf abj"); v3 != 1 {
+		t.Error("Input 3 got ", v3)
+	}
+
+	if v4 := ValidAnagramPassphrases("iiii oiii ooii oooi oooo"); v4 != 1 {
+		t.Error("Input 4 got ", v4)
+	}
+
+	if v5 := ValidAnagramPassphrases("oiii ioii iioi iiio"); v5 != 0 {
+		t.Error("Input 5 got ", v5)
+	}
+}
