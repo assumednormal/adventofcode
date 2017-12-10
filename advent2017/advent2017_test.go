@@ -177,3 +177,43 @@ func TestDay06_Memory_Reallocation_Part02(t *testing.T) {
 		t.Error("Input 1 got ", v1)
 	}
 }
+
+func TestDay07_Recursive_Circus_Part01(t *testing.T) {
+	i := `pbga (66)
+xhth (57)
+ebii (61)
+havc (66)
+ktlj (57)
+fwft (72) -> ktlj, cntj, xhth
+qoyq (66)
+padx (45) -> pbga, havc, qoyq
+tknk (41) -> ugml, padx, fwft
+jptl (61)
+ugml (68) -> gyxo, ebii, jptl
+gyxo (61)
+cntj (57)`
+
+	if v1 := FindBottom(i); v1 != "tknk" {
+		t.Error("Input 1 got ", v1)
+	}
+}
+
+func TestDay07_Recursive_Circus_Part02(t *testing.T) {
+	i := `pbga (66)
+xhth (57)
+ebii (61)
+havc (66)
+ktlj (57)
+fwft (72) -> ktlj, cntj, xhth
+qoyq (66)
+padx (45) -> pbga, havc, qoyq
+tknk (41) -> ugml, padx, fwft
+jptl (61)
+ugml (68) -> gyxo, ebii, jptl
+gyxo (61)
+cntj (57)`
+
+	if v1 := BalanceTower(i); v1 != 60 {
+		t.Error("Input 1 got ", v1)
+	}
+}
