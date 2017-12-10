@@ -217,3 +217,25 @@ cntj (57)`
 		t.Error("Input 1 got ", v1)
 	}
 }
+
+func TestDay08_Registers_Part01(t *testing.T) {
+	i := `b inc 5 if a > 1
+a inc 1 if b < 5
+c dec -10 if a >= 1
+c inc -20 if c == 10`
+
+	if v1 := LargestRegister(i); v1 != 1 {
+		t.Error("Input 1 got ", v1)
+	}
+}
+
+func TestDay08_Registers_Part02(t *testing.T) {
+	i := `b inc 5 if a > 1
+a inc 1 if b < 5
+c dec -10 if a >= 1
+c inc -20 if c == 10`
+
+	if v1 := LargestRegisterEver(i); v1 != 10 {
+		t.Error("Input 1 got ", v1)
+	}
+}

@@ -49,4 +49,9 @@ func main() {
 	day07Input := readFile("day07_input.txt")
 	fmt.Println(advent2017.FindBottom(day07Input))
 	fmt.Println(advent2017.BalanceTower(day07Input))
+
+	// day 8
+	day08Input := readFile("day08_input.txt")
+	fmt.Println(advent2017.LargestRegister(day08Input))
+	fmt.Println(advent2017.LargestRegisterEver(day08Input))
 }
