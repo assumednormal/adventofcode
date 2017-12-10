@@ -54,4 +54,13 @@ func main() {
 	day08Input := readFile("day08_input.txt")
 	fmt.Println(advent2017.LargestRegister(day08Input))
 	fmt.Println(advent2017.LargestRegisterEver(day08Input))
+
+	// day 9
+	day09Input := readFile("day09_input.txt")
+	fmt.Println(advent2017.StreamScore(day09Input))
+	fmt.Println(advent2017.GarbageCounter(day09Input))
+
+	// day 10
+	fmt.Println(advent2017.KnotHash(256, []int{14, 58, 0, 116, 179, 16, 1, 104, 2, 254, 167, 86, 255, 55, 122, 244}))
+	fmt.Println(advent2017.KnotHash2([]byte("14,58,0,116,179,16,1,104,2,254,167,86,255,55,122,244")))
 }

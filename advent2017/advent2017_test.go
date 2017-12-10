@@ -1,6 +1,8 @@
 package advent2017
 
-import "testing"
+import (
+	"testing"
+)
 
 func TestDay01_Captcha_Part01(t *testing.T) {
 	if v1 := SumSkipDigits("1122", 1); v1 != 3 {
@@ -237,5 +239,93 @@ c inc -20 if c == 10`
 
 	if v1 := LargestRegisterEver(i); v1 != 10 {
 		t.Error("Input 1 got ", v1)
+	}
+}
+
+func TestDay09_Streams_Part01(t *testing.T) {
+	if v1 := StreamScore("{}"); v1 != 1 {
+		t.Error("Input 1 got ", v1)
+	}
+
+	if v2 := StreamScore("{{{}}}"); v2 != 6 {
+		t.Error("Input 2 got ", v2)
+	}
+
+	if v3 := StreamScore("{{},{}}"); v3 != 5 {
+		t.Error("Input 3 got ", v3)
+	}
+
+	if v4 := StreamScore("{{{},{},{{}}}}"); v4 != 16 {
+		t.Error("Input 4 got ", v4)
+	}
+
+	if v5 := StreamScore("{<a>,<a>,<a>,<a>}"); v5 != 1 {
+		t.Error("Input 5 got ", v5)
+	}
+
+	if v6 := StreamScore("{{<ab>},{<ab>},{<ab>},{<ab>}}"); v6 != 9 {
+		t.Error("Input 6 got ", v6)
+	}
+
+	if v7 := StreamScore("{{<!!>},{<!!>},{<!!>},{<!!>}}"); v7 != 9 {
+		t.Error("Input 7 got ", v7)
+	}
+
+	if v8 := StreamScore("{{<a!>},{<a!>},{<a!>},{<ab>}}"); v8 != 3 {
+		t.Error("Input 8 got ", v8)
+	}
+}
+
+func TestDay09_Streams_Part02(t *testing.T) {
+	if v1 := GarbageCounter("<>"); v1 != 0 {
+		t.Error("Input 1 got ", v1)
+	}
+
+	if v2 := GarbageCounter("<random characters>"); v2 != 17 {
+		t.Error("Input 2 got ", v2)
+	}
+
+	if v3 := GarbageCounter("<<<<>"); v3 != 3 {
+		t.Error("Input 3 got ", v3)
+	}
+
+	if v4 := GarbageCounter("<{!>}>"); v4 != 2 {
+		t.Error("Input 4 got ", v4)
+	}
+
+	if v5 := GarbageCounter("<!!>"); v5 != 0 {
+		t.Error("Input 5 got ", v5)
+	}
+
+	if v6 := GarbageCounter("<!!!>>"); v6 != 0 {
+		t.Error("Input 6 got ", v6)
+	}
+
+	if v7 := GarbageCounter(`<{o"i!a,<{i<a`); v7 != 10 {
+		t.Error("Input 7 got ", v7)
+	}
+}
+
+func TestDay10_Knot_Hash_Part01(t *testing.T) {
+	if v1 := KnotHash(5, []int{3, 4, 1, 5}); v1 != 12 {
+		t.Error("Input 1 got ", v1)
+	}
+}
+
+func TestDay10_Knot_Hash_Part02(t *testing.T) {
+	if v1 := KnotHash2([]byte("")); v1 != "a2582a3a0e66e6e86e3812dcb672a272" {
+		t.Error("Input 1 got ", v1)
+	}
+
+	if v2 := KnotHash2([]byte("AoC 2017")); v2 != "33efeb34ea91902bb2f59c9920caa6cd" {
+		t.Error("Input 2 got ", v2)
+	}
+
+	if v3 := KnotHash2([]byte("1,2,3")); v3 != "3efbe78a8d82f29979031a4aa0b16a9d" {
+		t.Error("Input 3 got ", v3)
+	}
+
+	if v4 := KnotHash2([]byte("1,2,4")); v4 != "63960835bcdc130f0b66d7ff4f6a5a8e" {
+		t.Error("Input 4 got ", v4)
 	}
 }
