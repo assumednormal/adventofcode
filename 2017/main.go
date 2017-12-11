@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"io/ioutil"
 
-	"adventofcode2017/advent2017"
+	"adventofcode/2017/advent2017"
 )
 
 func readFile(f string) string {
