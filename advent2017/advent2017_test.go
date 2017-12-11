@@ -329,3 +329,39 @@ func TestDay10_Knot_Hash_Part02(t *testing.T) {
 		t.Error("Input 4 got ", v4)
 	}
 }
+
+func TestDay11_Hex_Ed_Part01(t *testing.T) {
+	if v1 := HexDistance("ne,ne,ne"); v1 != 3 {
+		t.Error("Input 1 got ", v1)
+	}
+
+	if v2 := HexDistance("ne,ne,sw,sw"); v2 != 0 {
+		t.Error("Input 2 got ", v2)
+	}
+
+	if v3 := HexDistance("ne,ne,s,s"); v3 != 2 {
+		t.Error("Input 3 got ", v3)
+	}
+
+	if v4 := HexDistance("se,sw,se,sw,sw"); v4 != 3 {
+		t.Error("Input 4 got ", v4)
+	}
+}
+
+func TestDay11_Hex_Ed_Part02(t *testing.T) {
+	if v1 := HexDistance2("ne,ne,ne"); v1 != 3 {
+		t.Error("Input 1 got ", v1)
+	}
+
+	if v2 := HexDistance2("ne,ne,sw,sw"); v2 != 2 {
+		t.Error("Input 2 got ", v2)
+	}
+
+	if v3 := HexDistance2("ne,ne,s,s"); v3 != 2 {
+		t.Error("Input 3 got ", v3)
+	}
+
+	if v4 := HexDistance2("se,sw,se,sw,sw"); v4 != 3 {
+		t.Error("Input 4 got ", v4)
+	}
+}

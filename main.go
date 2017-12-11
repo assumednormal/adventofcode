@@ -63,4 +63,9 @@ func main() {
 	// day 10
 	fmt.Println(advent2017.KnotHash(256, []int{14, 58, 0, 116, 179, 16, 1, 104, 2, 254, 167, 86, 255, 55, 122, 244}))
 	fmt.Println(advent2017.KnotHash2([]byte("14,58,0,116,179,16,1,104,2,254,167,86,255,55,122,244")))
+
+	// day 11
+	day11Input := readFile("day11_input.txt")
+	fmt.Println(advent2017.HexDistance(day11Input))
+	fmt.Println(advent2017.HexDistance2(day11Input))
 }
