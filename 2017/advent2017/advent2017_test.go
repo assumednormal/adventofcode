@@ -365,3 +365,31 @@ func TestDay11_Hex_Ed_Part02(t *testing.T) {
 		t.Error("Input 4 got ", v4)
 	}
 }
+
+func TestDay12_Digital_Plumber_Part01(t *testing.T) {
+	i := `0 <-> 2
+1 <-> 1
+2 <-> 0, 3, 4
+3 <-> 2, 4
+4 <-> 2, 3, 6
+5 <-> 6
+6 <-> 4, 5`
+
+	if v1 := GroupWithZero(i); v1 != 6 {
+		t.Error("Input 1 got ", v1)
+	}
+}
+
+func TestDay12_Digital_Plumber_Part02(t *testing.T) {
+	i := `0 <-> 2
+1 <-> 1
+2 <-> 0, 3, 4
+3 <-> 2, 4
+4 <-> 2, 3, 6
+5 <-> 6
+6 <-> 4, 5`
+
+	if v1 := CountGroups(i); v1 != 2 {
+		t.Error("Input 1 got ", v1)
+	}
+}

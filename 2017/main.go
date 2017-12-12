@@ -68,4 +68,9 @@ func main() {
 	day11Input := readFile("day11_input.txt")
 	fmt.Println(advent2017.HexDistance(day11Input))
 	fmt.Println(advent2017.HexDistance2(day11Input))
+
+	// day 12
+	day12Input := readFile("day12_input.txt")
+	fmt.Println(advent2017.GroupWithZero(day12Input))
+	fmt.Println(advent2017.CountGroups(day12Input))
 }
