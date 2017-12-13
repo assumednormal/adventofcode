@@ -73,4 +73,9 @@ func main() {
 	day12Input := readFile("day12_input.txt")
 	fmt.Println(advent2017.GroupWithZero(day12Input))
 	fmt.Println(advent2017.CountGroups(day12Input))
+
+	// day 13
+	day13Input := readFile("day13_input.txt")
+	fmt.Println(advent2017.TripSeverity(day13Input))
+	fmt.Println(advent2017.MinimumDelay(day13Input))
 }

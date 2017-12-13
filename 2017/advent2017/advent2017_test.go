@@ -393,3 +393,25 @@ func TestDay12_Digital_Plumber_Part02(t *testing.T) {
 		t.Error("Input 1 got ", v1)
 	}
 }
+
+func TestDay13_Packet_Scanner_Part01(t *testing.T) {
+	i := `0: 3
+1: 2
+4: 4
+6: 4`
+
+	if v1 := TripSeverity(i); v1 != 24 {
+		t.Error("Input 1 got ", v1)
+	}
+}
+
+func TestDay13_Packet_Scanner_Part02(t *testing.T) {
+	i := `0: 3
+1: 2
+4: 4
+6: 4`
+
+	if v1 := MinimumDelay(i); v1 != 10 {
+		t.Error("Input 1 got ", v1)
+	}
+}
