@@ -415,3 +415,15 @@ func TestDay13_Packet_Scanner_Part02(t *testing.T) {
 		t.Error("Input 1 got ", v1)
 	}
 }
+
+func TestDay14_Disk_Defragmentation_Part01(t *testing.T) {
+	if v1 := UsedSquares("flqrgnkx"); v1 != 8108 {
+		t.Error("Input 1 got ", v1)
+	}
+}
+
+func TestDay14_Disk_Defragmentation_Part02(t *testing.T) {
+	if v1 := CountRegions("flqrgnkx"); v1 != 1242 {
+		t.Error("Input 1 got ", v1)
+	}
+}

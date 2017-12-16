@@ -78,4 +78,9 @@ func main() {
 	day13Input := readFile("day13_input.txt")
 	fmt.Println(advent2017.TripSeverity(day13Input))
 	fmt.Println(advent2017.MinimumDelay(day13Input))
+
+	// day 14
+	day14Input := "oundnydw"
+	fmt.Println(advent2017.UsedSquares(day14Input))
+	fmt.Println(advent2017.CountRegions(day14Input))
 }
