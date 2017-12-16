@@ -83,4 +83,8 @@ func main() {
 	day14Input := "oundnydw"
 	fmt.Println(advent2017.UsedSquares(day14Input))
 	fmt.Println(advent2017.CountRegions(day14Input))
+
+	// day 15
+	fmt.Println(advent2017.MatchingBits(289, 16807, 629, 48271, 40000000))
+	fmt.Println(advent2017.MatchingBits2(289, 16807, 4, 629, 48271, 8, 5000000))
 }

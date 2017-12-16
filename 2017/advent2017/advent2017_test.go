@@ -427,3 +427,19 @@ func TestDay14_Disk_Defragmentation_Part02(t *testing.T) {
 		t.Error("Input 1 got ", v1)
 	}
 }
+
+func TestDay15_Dueling_Generators_Part01(t *testing.T) {
+	if v1 := MatchingBits(65, 16807, 8921, 48271, 5); v1 != 1 {
+		t.Error("Input 1 got ", v1)
+	}
+
+	if v2 := MatchingBits(65, 16807, 8921, 48271, 40000000); v2 != 588 {
+		t.Error("Input 2 got ", v2)
+	}
+}
+
+func TestDay15_Dueling_Generators_Part02(t *testing.T) {
+	if v1 := MatchingBits2(65, 16807, 4, 8921, 48271, 8, 5000000); v1 != 309 {
+		t.Error("Input 1 got ", v1)
+	}
+}
