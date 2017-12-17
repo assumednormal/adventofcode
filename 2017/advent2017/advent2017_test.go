@@ -443,3 +443,9 @@ func TestDay15_Dueling_Generators_Part02(t *testing.T) {
 		t.Error("Input 1 got ", v1)
 	}
 }
+
+func TestDay16_Permutation_Promenade_Part01(t *testing.T) {
+	if v1 := Dance("s1,x3/4,pe/b", []rune("abcde")); v1 != "baedc" {
+		t.Error("Input 1 got ", v1)
+	}
+}

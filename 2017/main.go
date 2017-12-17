@@ -80,11 +80,15 @@ func main() {
 	fmt.Println(advent2017.MinimumDelay(day13Input))
 
 	// day 14
-	day14Input := "oundnydw"
-	fmt.Println(advent2017.UsedSquares(day14Input))
-	fmt.Println(advent2017.CountRegions(day14Input))
+	fmt.Println(advent2017.UsedSquares("oundnydw"))
+	fmt.Println(advent2017.CountRegions("oundnydw"))
 
 	// day 15
 	fmt.Println(advent2017.MatchingBits(289, 16807, 629, 48271, 40000000))
 	fmt.Println(advent2017.MatchingBits2(289, 16807, 4, 629, 48271, 8, 5000000))
+
+	// day 16
+	day16Input := readFile("day16_input.txt")
+	fmt.Println(advent2017.Dance(day16Input, []rune("abcdefghijklmnop")))
+	fmt.Println(advent2017.Dance2(day16Input, []rune("abcdefghijklmnop")))
 }
