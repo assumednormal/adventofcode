@@ -91,4 +91,8 @@ func main() {
 	day16Input := readFile("day16_input.txt")
 	fmt.Println(advent2017.Dance(day16Input, []rune("abcdefghijklmnop")))
 	fmt.Println(advent2017.Dance2(day16Input, []rune("abcdefghijklmnop")))
+
+	// day 17
+	fmt.Println(advent2017.Spinlock(2017, 316))
+	fmt.Println(advent2017.Spinlock2(50000000, 316))
 }

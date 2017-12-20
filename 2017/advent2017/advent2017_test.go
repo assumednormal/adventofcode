@@ -449,3 +449,23 @@ func TestDay16_Permutation_Promenade_Part01(t *testing.T) {
 		t.Error("Input 1 got ", v1)
 	}
 }
+
+func TestDay17_Spinlock_Part01(t *testing.T) {
+	if v1 := Spinlock(9, 3); v1 != 5 {
+		t.Error("Input 1 got ", v1)
+	}
+
+	if v2 := Spinlock(2017, 3); v2 != 638 {
+		t.Error("Input 2 got ", v2)
+	}
+}
+
+func TestDay17_Spinlock_Part02(t *testing.T) {
+	if v1 := Spinlock2(9, 3); v1 != 9 {
+		t.Error("Input 1 got ", v1)
+	}
+
+	if v2 := Spinlock2(2017, 3); v2 != 1226 {
+		t.Error("Input 2 got ", v2)
+	}
+}
