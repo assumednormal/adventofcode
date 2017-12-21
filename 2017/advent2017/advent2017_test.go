@@ -469,3 +469,42 @@ func TestDay17_Spinlock_Part02(t *testing.T) {
 		t.Error("Input 2 got ", v2)
 	}
 }
+
+// func TestDay18_Duet_Part01(t *testing.T) {
+// 	i := `set a 1
+// add a 2
+// mul a a
+// mod a 5
+// snd a
+// set a 0
+// rcv a
+// jgz a -1
+// set a 1
+// jgz a -2`
+
+// 	if v1 := FirstRecover(i); v1 != 4 {
+// 		t.Error("Input 1 got ", v1)
+// 	}
+// }
+
+func TestDay18_Duet_Part02(t *testing.T) {
+	i := `snd 1
+snd 2
+snd p
+rcv a
+rcv b
+rcv c
+rcv d`
+
+	if v1 := ParallelPrograms(i); v1 != 3 {
+		t.Error("Input 1 got ", v1)
+	}
+}
+
+func TestDay18_Duet_Part03(t *testing.T) {
+	i := `rcv a`
+
+	if v1 := ParallelPrograms(i); v1 != 0 {
+		t.Error("Input 1 got ", v1)
+	}
+}

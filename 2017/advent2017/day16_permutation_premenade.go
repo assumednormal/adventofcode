@@ -54,7 +54,6 @@ func Dance2(s string, programs []rune) string {
 	for i = 0; i < 1000000000; i++ {
 		prevProgram = Dance(s, []rune(prevProgram))
 		if _, ok := programOrders[prevProgram]; ok {
-			fmt.Println("pattern", prevProgram, "at iteration", programOrders[prevProgram], "and at iteration", i)
 			break
 		} else {
 			programOrders[prevProgram] = i + 1
