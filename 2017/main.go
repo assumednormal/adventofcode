@@ -1,10 +1,9 @@
 package main
 
 import (
+	"adventofcode/2017/advent2017"
 	"fmt"
 	"io/ioutil"
-
-	"adventofcode/2017/advent2017"
 )
 
 func readFile(f string) string {
@@ -97,7 +96,17 @@ func main() {
 	// fmt.Println(advent2017.Spinlock2(50000000, 316))
 
 	// day 18
-	day18Input := readFile("day18_input.txt")
+	// day18Input := readFile("day18_input.txt")
 	// fmt.Println(advent2017.FirstRecover(day18Input))
-	fmt.Println(advent2017.ParallelPrograms(day18Input))
+	// fmt.Println(advent2017.ParallelPrograms(day18Input))
+
+	// day 19
+	// day19Input := readFile("day19_input.txt")
+	// fmt.Println(advent2017.Path(day19Input))
+	// fmt.Println(advent2017.PathSteps(day19Input))
+
+	// day 20
+	day20Input := readFile("day20_input.txt")
+	// fmt.Println(advent2017.ClosestParticle(day20Input))
+	fmt.Println(advent2017.ParticlesAfterCollisions(day20Input))
 }
