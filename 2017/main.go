@@ -1,8 +1,6 @@
 package main
 
 import (
-	"adventofcode/2017/advent2017"
-	"fmt"
 	"io/ioutil"
 )
 
@@ -106,7 +104,18 @@ func main() {
 	// fmt.Println(advent2017.PathSteps(day19Input))
 
 	// day 20
-	day20Input := readFile("day20_input.txt")
+	// day20Input := readFile("day20_input.txt")
 	// fmt.Println(advent2017.ClosestParticle(day20Input))
-	fmt.Println(advent2017.ParticlesAfterCollisions(day20Input))
+	// fmt.Println(advent2017.ParticlesAfterCollisions(day20Input))
+
+	// day 22
+	// day22Input := readFile("day22_input.txt")
+	// fmt.Println(advent2017.Infections(day22Input, 10000))
+	// fmt.Println(advent2017.Infections2(day22Input, 10000000))
+
+	// day 23
+	// day23Input := readFile("day23_input.txt")
+	// fmt.Println(advent2017.CountMultiplies(day23Input))
+	// fmt.Println(advent2017.RegisterH(day23Input))
+	// day 23 is solved in a test...
 }

@@ -1,6 +1,7 @@
 package advent2017
 
 import (
+	"fmt"
 	"io/ioutil"
 	"testing"
 )
@@ -530,11 +531,36 @@ func readFile(f string) string {
 // 	}
 // }
 
-func TestDay20_Particle_Swarm_Part01(t *testing.T) {
-	i := `p=< 3,0,0>, v=< 2,0,0>, a=<-1,0,0>
-p=< 4,0,0>, v=< 0,0,0>, a=<-2,0,0>`
+// func TestDay20_Particle_Swarm_Part01(t *testing.T) {
+// 	i := `p=< 3,0,0>, v=< 2,0,0>, a=<-1,0,0>
+// p=< 4,0,0>, v=< 0,0,0>, a=<-2,0,0>`
 
-	if v1 := ClosestParticle(i); v1 != 0 {
-		t.Error("Input 1 got ", v1)
-	}
+// 	if v1 := ClosestParticle(i); v1 != 0 {
+// 		t.Error("Input 1 got ", v1)
+// 	}
+// }
+
+// func TestDay22_Sporifica_Virus_Part01(t *testing.T) {
+// 	i := `..#
+// #..
+// ...`
+
+// 	if v1 := Infections(i, 10000); v1 != 5587 {
+// 		t.Error("Input 1 got ", v1)
+// 	}
+// }
+
+// func TestDay22_Sporifica_Virus_Part02(t *testing.T) {
+// 	i := `..#
+// #..
+// ...`
+
+// 	if v1 := Infections2(i, 10000000); v1 != 2511944 {
+// 		t.Error("Input 1 got ", v1)
+// 	}
+// }
+
+func TestDay23_Part_02(t *testing.T) {
+	fmt.Println(run())
+	t.Error()
 }
