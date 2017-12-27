@@ -1,7 +1,6 @@
 package advent2017
 
 import (
-	"fmt"
 	"io/ioutil"
 	"testing"
 )
@@ -560,7 +559,37 @@ func readFile(f string) string {
 // 	}
 // }
 
-func TestDay23_Part_02(t *testing.T) {
-	fmt.Println(run())
-	t.Error()
+// func TestDay23_Part_02(t *testing.T) {
+// 	fmt.Println(run())
+// 	t.Error()
+// }
+
+// func TestDay24_Electromagnetic_Moat_Part01(t *testing.T) {
+// 	i := `0/2
+// 2/2
+// 2/3
+// 3/4
+// 3/5
+// 0/1
+// 10/1
+// 9/10`
+
+// 	if v1 := Bridge(i); v1 != 31 {
+// 		t.Error("Input 1 got ", v1)
+// 	}
+// }
+
+func TestDay24_Electromagnetic_Moat_Part02(t *testing.T) {
+	i := `0/2
+2/2
+2/3
+3/4
+3/5
+0/1
+10/1
+9/10`
+
+	if v1 := Bridge2(i); v1 != 19 {
+		t.Error("Input 1 got ", v1)
+	}
 }

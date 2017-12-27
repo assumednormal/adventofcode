@@ -1,6 +1,8 @@
 package main
 
 import (
+	"adventofcode/2017/advent2017"
+	"fmt"
 	"io/ioutil"
 )
 
@@ -118,4 +120,12 @@ func main() {
 	// fmt.Println(advent2017.CountMultiplies(day23Input))
 	// fmt.Println(advent2017.RegisterH(day23Input))
 	// day 23 is solved in a test...
+
+	// day 24
+	// day24Input := readFile("day24_input.txt")
+	// fmt.Println(advent2017.Bridge(day24Input))
+	// fmt.Println(advent2017.Bridge2(day24Input))
+
+	// day 25
+	fmt.Println(advent2017.HaltingProblem(12368930, 'A'))
 }
